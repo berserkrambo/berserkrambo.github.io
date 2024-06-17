@@ -77,14 +77,16 @@ body {
     padding-top: 0.5rem;      /* Padding superiore */
     padding-bottom: 0.5rem;   /* Padding inferiore */
     padding-left: 1.2rem;       /* Padding a sinistra */
-    /*padding-right: 0rem;    !* Padding a destra ridotto *!*/
+    padding-right: 0.5rem;    /* Padding a destra ridotto */
     font-size: 1.5rem;
+    margin: 0 auto; /* Centra il logo */
 }
 
 .nav-link {
     font-weight: bold;
     /*color: #b9d2ff; !* testo del menu in blu scuro per buon contrasto *!*/
     color: #c0c0c0; /* testo del menu in blu scuro per buon contrasto */
+    white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -111,6 +113,11 @@ body {
     width: auto; /* Larghezza variabile per mantenere il rapporto d'aspetto */
     margin: 0 10px; /* Spaziatura tra le icone */
 }
+
+.sm-icons {
+    flex-direction: row;
+}
+
 
 h1, h3, h4, h5 {
     font-family: 'Arial', sans-serif;
