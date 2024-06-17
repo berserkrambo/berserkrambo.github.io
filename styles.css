@@ -79,7 +79,7 @@ body {
     padding-left: 1.2rem;       /* Padding a sinistra */
     padding-right: 0.5rem;    /* Padding a destra ridotto */
     font-size: 1.5rem;
-    margin: 0 auto; /* Centra il logo */
+    /*margin: 0 auto; !* Centra il logo *!*/
 }
 
 .nav-link {
@@ -111,7 +111,7 @@ body {
 .contact-icon {
     height: 40px; /* Altezza fissa per le icone dei contatti */
     width: auto; /* Larghezza variabile per mantenere il rapporto d'aspetto */
-    margin: 0 10px; /* Spaziatura tra le icone */
+    /*margin: 0 10px; !* Spaziatura tra le icone *!*/
 }
 
 .sm-icons {
@@ -127,6 +127,31 @@ h1, h3, h4, h5 {
 
 p, li, div {
     color: #333333; /* Grigio scuro per il testo normale */
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        /*flex-direction: column; !* Disporre le icone e i link in una colonna su schermi piccoli *!*/
+        align-items: center; /* Allinea al centro */
+    }
+
+    .sm-icons {
+        flex-wrap: nowrap; /* Assicura che le icone dei social media rimangano su una riga */
+        justify-content: center; /* Centra le icone dei social media */
+    }
+
+    .navbar-brand {
+        margin: 0 auto; /* Centra il logo */
+    }
+
+    .logo-item {
+        order: 1; /* Cambia l'ordine del logo in base alla media query */
+    }
+
+    .contact-icon {
+        margin: 0 1px; /* Riduce la spaziatura tra le icone solo su schermi piccoli */
+    }
 }
 
 /*#home {*/
