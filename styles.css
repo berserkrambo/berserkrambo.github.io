@@ -45,7 +45,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-size: 2.0rem; /* Aumenta la dimensione del font */
+    font-size: 1.5rem; /* Aumenta la dimensione del font */
 }
 
 .fullscreen-text {
