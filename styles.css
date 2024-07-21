@@ -39,13 +39,13 @@ body {
     background: linear-gradient(
             /*rgb(103, 155, 212), !* Overlay blu trasparente *!*/
             rgb(48, 124, 206), /* Overlay blu trasparente */
-            /*rgba(255, 255, 255, 0.5) !* Verso un overlay chiaro *!*/ rgba(48, 124, 206, 0.36) /* Verso un overlay chiaro */
+            /*rgba(255, 255, 255, 0.5) !* Verso un overlay chiaro *!*/ rgba(48, 124, 206, 0.59) /* Verso un overlay chiaro */
     /*), url('static/images/section_1_bg.jpg');*/
     ), url('static/images/sez_0.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-size: 1.5rem; /* Aumenta la dimensione del font */
+    font-size: 1.2rem; /* Aumenta la dimensione del font */
 }
 
 .fullscreen-text {
@@ -127,7 +127,7 @@ h1, h3, h4, h5 {
 }
 
 p, li, div {
-    color: #333333; /* Grigio scuro per il testo normale */
+    color: #000000; /* Grigio scuro per il testo normale */
 }
 
 
@@ -249,7 +249,7 @@ th, td {
 }
 th {
     background-color: #003366;
-    color: white;
+    color: #c0c0c0;
     font-size: 1.5rem;
 }
 /*tr:nth-child(even) {*/
