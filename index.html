@@ -21,72 +21,9 @@
 
 </head>
 <body>
+
 <!-- Navigazione -->
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav sm-icons">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://x.com/?lang=it"><img src="static/icon/X_logo_2023.svg" alt="X"
-                                                                           class="contact-icon"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.facebook.com/?locale=it_IT"><img
-                            src="static/icon/2023_Facebook_icon.svg"
-                            alt="Facebook" class="contact-icon"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.instagram.com"><img src="static/icon/Instagram_logo_2022.svg"
-                                                                              alt="Instagram" class="contact-icon"></a>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#chi-siamo">Chi siamo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#servizi">Servizi</a>
-                </li>
-                <!-- Logo al centro -->
-                <li class="nav-item">
-                    <a class="navbar-brand" href="#home"><img src="static/telescopio_logo_b_arg.png" alt="Logo"
-                                                              class="logo-img"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="modello_teorico.html">Modello Teorico</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#tariffe">Tariffe</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contatti">Contatti</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav sm-icons">
-                <li class="nav-item">
-                    <a class="nav-link" href="tel:+393479647361"><img src="static/icon/phone_logo.svg" alt="Phone"
-                                                                      class="contact-icon"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mailto:iltelescopiosipre@gmail.com"><img src="static/icon/mail_logo3.svg"
-                                                                                       alt="Email"
-                                                                                       class="contact-icon"></a>
-                </li>
-            </ul>
-
-            </ul>
-
-        </div>
-    </div>
-</nav>
+<div id="navbar"> </div>
 
 <!-- Home -->
 <div id="home" class="container-fluid vh-100 home_section">
@@ -106,26 +43,27 @@
 
 
 <!-- Chi siamo -->
-<div id="chi-siamo" class="container py-5">
+<div id="chi-siamo" class="container py-5 shadow p-3 mb-5 mt-3 rounded">
     <div class="row justify-content-center align-items-center mb-5">
-        <div class="col text-center">
+        <div class="col-2"></div>
+        <div class="col-8 text-center">
             <h1 class="display-2 fw-bold">Chi Siamo</h1>
-            <p>Il Centro Clinico IL TELESCOPIO della Società Italiana di Psicoanalisi della Relazione SIPRe offre
-                consultazioni e terapie psicologiche, spazi di ascolto e riflessione per elaborare vissuti di disagio e
-                sofferenza, mirati a migliorare il benessere personale, familiare e di gruppo.</p>
-            <p>Il Centro è costituito da un’équipe di psicologi e psicoterapeuti che collaborano per offrire percorsi di
-                cura personalizzati. Opera presso la sede SIPRe di <a href="https://www.sipreonline.it/sede-parma/"
-                                                                      target="_blank">Parma</a> e in altri territori,
-                offrendo anche consultazioni e terapie online per adolescenti, giovani adulti e adulti.</p>
-            <p><a href="https://www.sipreonline.it/" target="_blank">La Società Italiana di Psicoanalisi della Relazione
-                SIPRe</a> è parte di:
-                <br>IFPS, International Federation of Psychoanalitic Societies
-                <br>AGIPPsA, Associazione dei Gruppi Italiani di Psicoterapia Psicoanalitica dell’Adolescenza
-                <br>OPIFER, Organizzazione Psicoanalisti Italiani Federazione e Registro</p>
-            <p>Il Centro Clinico IL TELESCOPIO aderisce alla <a href="https://www.retepsicoterapiasociale.it/"
-                                                                target="_blank">Rete di Psicoterapia Sociale RPS</a>,
-                promuovendo interventi solidali e sostenibili a prezzi calmierati.</p>
+            <p>Il Centro Clinico IL TELESCOPIO della Società Italiana di Psicoanalisi della Relazione SIPRe è formato da
+                un’équipe di psicologi e psicoterapeuti che offre consultazioni, sostegno e terapie psicologiche rivolte
+                ai singoli, alla famiglia e al gruppo.</p>
+            <p>I professionisti collaborano, si confrontano e condividono risposte e percorsi di cura personalizzati.
+                .</p>
+            <p>Il Centro Clinico opera presso la sede <a href="https://www.sipreonline.it/sede-parma/"
+                                                         target="_blank">SIPRe di Parma</a> e in altri territori, e
+                offre consultazioni, sostegno e psicoterapie anche a distanza (on-line) ad adolescenti, giovani adulti e
+                adulti.</p>
+
+            <p>Aderendo alla <a href="https://www.retepsicoterapiasociale.it/"
+                                target="_blank">Rete di Psicoterapia Sociale RPS</a>,
+                abbiamo scelto di promuovere interventi sostenibili e accessibili grazie a un tariffario modulato a
+                seconda delle fasce di reddito.</p>
         </div>
+        <div class="col-2"></div>
     </div>
 </div>
 
@@ -143,7 +81,7 @@
     <table>
         <thead>
         <tr>
-            <th colspan="2" style="text-align: center"> SERVIZI IN PRESENZA E A DISTANZA ON-LINE <br> Nei
+            <th colspan="2" style="text-align: center"> SERVIZI IN PRESENZA E A DISTANZA ON-LINE PER ADOLESCENTI, GIOVANI, ADULTI <br> Nei
                 territori: Parma,
                 Forlì, Modena, La Spezia
             </th>
@@ -151,29 +89,20 @@
         </thead>
     </table>
     <div class="row g-4">
-        <div class="col-md-3">
-            <div class="service-item">Percorsi di valutazione psicodiagnostica</div>
-        </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <div class="service-item">Consultazione psicologica</div>
         </div>
-        <div class="col-md-3">
-            <div class="service-item">Percorsi di sostegno individuali o di gruppo su problematiche specifiche</div>
+        <div class="col-md-4">
+            <div class="service-item">Percorsi di sostegno individuali o di gruppo</div>
         </div>
-        <div class="col-md-3">
-            <div class="service-item">Sostegno alla funzione genitoriale</div>
+        <div class="col-md-4">
+            <div class="service-item">Psicoterapia individuale e di gruppo</div>
         </div>
-        <div class="col-md-3">
-            <div class="service-item">Psicoterapia individuale</div>
-        </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <div class="service-item">Psicoterapia di coppia</div>
         </div>
-        <div class="col-md-3">
-            <div class="service-item">Psicoterapia familiare</div>
-        </div>
-        <div class="col-md-3">
-            <div class="service-item">Interventi di consulenza e formazione rivolti a enti, istituzioni e associazioni
+        <div class="col-md-4">
+            <div class="service-item">Consulenza e formazione (ad enti, istituzioni e associazioni)
             </div>
         </div>
     </div>
@@ -189,8 +118,8 @@
                     <thead>
                     <tr>
                         <th>Servizio</th>
-                        <th>Prezzo Ordinario</th>
-                        <th>Prezzo Calmierato</th>
+                        <th>Tariffa Ordinaria</th>
+                        <th>Tariffa Calmierata</th>
                     </tr>
                     </thead>
 
@@ -204,16 +133,6 @@
                         <td>Psicoterapia individuale</td>
                         <td>€ 60</td>
                         <td>€ 40</td>
-                    </tr>
-                    <tr>
-                        <td>Psicoterapia familiare</td>
-                        <td>€ 70</td>
-                        <td>€ 50</td>
-                    </tr>
-                    <tr>
-                        <td>Psicoterapia di coppia</td>
-                        <td>€ 70</td>
-                        <td>€ 50</td>
                     </tr>
                     <tr>
                         <td>Psicoterapia di gruppo</td>
@@ -231,40 +150,78 @@
     </div>
 </div>
 
-<!-- Contatti -->
-<div id="contatti" class="container-fluid py-5 con contact_sections">
-    <div class="row d-flex  align-items-center h-100">
-        <div class="col-md-6  col-12 text-center mb-4 mb-md-0">
-            <h1 class="display-2 fw-bold pb-5" style="color: #efefef">Contatti</h1>
-            <p>IL TELESCOPIO Centro Clinico SIPRe<br>Strada della Repubblica 61, Parma (PR)</p>
-            <p><img src="static/icon/phone_logo.svg" alt="Phone" style="height: 20px; width: auto;"> Telefono: <a
-                    href="tel:+39059125874">+39 347 9647361</a></p>
-            <p><img src="static/icon/mail_logo3.svg" alt="Email" style="height: 20px; width: auto;"> Email: <a
-                    href="mailto:your@email.com">iltelescopiosipre@gmail.com </a></p>
-            <p>Seguici su:</p>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <a href="https://x.com/?lang=it"><img src="static/icon/X_logo_2023.svg" alt="X"
-                                                          style="height: 40px; width: auto;"></a>
-                </div>
-                <div class="col-auto">
-                    <a href="https://www.facebook.com/?locale=it_IT"><img src="static/icon/2023_Facebook_icon.svg"
-                                                                          alt="Facebook"
-                                                                          style="height: 40px; width: auto;"></a>
-                </div>
-                <div class="col-auto">
-                    <a href="https://www.instagram.com"><img src="static/icon/Instagram_logo_2022.svg"
-                                                             alt="Instagram"
-                                                             style="height: 40px; width: auto;"></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5 col-12 text-center">
-            <iframe src="https://maps.google.com/maps?q=SIPRe%20Parma%20-%20Societ%C3%A0%20Italiana%20di%20Psicoanalisi%20della%20Relazione,%20Str.%20della%20Repubblica,%2061,%2043121%20Parma%20PR&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0" style="border:0; width: 100%; height: 500px;" allowfullscreen></iframe>
+<div id="contatti"></div>
+<div id="cookie"></div>
+
+<script>
+    // Funzione per caricare HTML da un file e inserirlo in un elemento
+    function loadHTML(elementID, filePath) {
+        fetch(filePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Impossibile caricare ${filePath}`);
+                }
+                return response.text();
+            })
+            .then(data => {
+                const container = document.getElementById(elementID);
+                container.innerHTML = data;
+
+                // Esegui gli script appena inseriti nel DOM
+                const scripts = container.getElementsByTagName('script');
+                for (let i = 0; i < scripts.length; i++) {
+                    eval(scripts[i].text);  // Esegui gli script caricati
+                }
+            })
+            .catch(error => {
+                console.error('Errore:', error);
+            });
+    }
+
+    // Carica la navbar e il footer
+    document.addEventListener('DOMContentLoaded', function() {
+        loadHTML('contatti', 'module_contatti.html');
+        loadHTML('navbar', 'module_navbar.html');
+    });
+</script>
+
+<div class="cookie-banner bg-dark text-light p-3 fixed-bottom" style="display: none;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <p class="mb-0">Questo sito utilizza i cookie per migliorare la tua esperienza. <a href="/cookie-policy" class="text-light">Leggi di più</a></p>
+        <div>
+            <a href="info_cookies.html" class="btn btn-secondary btn-sm mr-2">Info</a>
+            <button class="btn btn-primary btn-sm">Accetta</button>
         </div>
     </div>
 </div>
+
+<script>
+    window.onload = function() {
+        const cookieBanner = document.querySelector('.cookie-banner');
+
+        // Controlla se il cookie di consenso esiste
+        if (!document.cookie.split(';').some((item) => item.trim().startsWith('cookieConsent=true'))) {
+            // Mostra il banner solo se il consenso non è stato dato
+            if (cookieBanner) {
+                cookieBanner.style.display = 'block';
+            }
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const acceptButton = document.querySelector('.cookie-banner button');
+        if (acceptButton) {
+            acceptButton.addEventListener('click', function() {
+                const cookieBanner = document.querySelector('.cookie-banner');
+                if (cookieBanner) {
+                    cookieBanner.style.display = 'none';
+                }
+                // Imposta il cookie di consenso
+                document.cookie = "cookieConsent=true; path=/; max-age=" + (60*60*24*365); // 1 anno
+            });
+        }
+    });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Telescopio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<!-- Navigazione -->
+<div id="navbar"></div>
+
+
+<!--Cookies-->
+<div id="info_cookies" class="container pt-5 mt-5">
+    <div class="row justify-content-center align-items-center mb-5 shadow p-3 mb-5 mt-3 rounded">
+        <div class="col">
+            <h1 class="display-2 fw-bold">Informativa sui Cookie</h1>
+
+            <h2>Cosa sono i cookie?</h2>
+            <p>I cookie sono piccoli file di testo che vengono memorizzati sul tuo dispositivo (computer, tablet,
+                smartphone, ecc.) quando visiti un sito web. I cookie aiutano a migliorare la tua esperienza di
+                navigazione, consentendo al sito di ricordare le tue preferenze e azioni nel tempo.</p>
+
+            <h2>Tipi di cookie utilizzati</h2>
+            <p><strong>1. Cookie tecnici:</strong> Questi cookie sono essenziali per il corretto funzionamento del sito.
+                Consentono la navigazione e l'utilizzo delle funzionalità principali, come l'accesso ad aree riservate
+                del sito. Senza questi cookie, alcuni servizi richiesti non potrebbero essere forniti.</p>
+
+            <p><strong>2. Cookie di analisi:</strong> Questi cookie raccolgono informazioni su come i visitatori
+                utilizzano il sito, ad esempio quali pagine vengono visitate più frequentemente e se gli utenti ricevono
+                messaggi di errore dalle pagine web. I dati raccolti da questi cookie sono anonimi e vengono utilizzati
+                solo per migliorare il funzionamento del sito.</p>
+
+            <p><strong>3. Cookie di profilazione:</strong> Questi cookie sono utilizzati per tracciare la tua
+                navigazione sul sito e creare profili sui tuoi gusti, abitudini e scelte. Possono essere utilizzati per
+                inviare messaggi pubblicitari in linea con le preferenze manifestate durante la navigazione.</p>
+
+            <h2>Come utilizziamo i cookie?</h2>
+            <p>Il nostro sito utilizza cookie per diversi scopi:</p>
+            <ul>
+                <li><strong>Cookie tecnici:</strong> Necessari per il funzionamento del sito e per fornirti i servizi
+                    richiesti.
+                </li>
+                <li><strong>Cookie di analisi:</strong> Utilizziamo strumenti come Google Analytics per raccogliere
+                    informazioni aggregate e anonime sul comportamento degli utenti, al fine di migliorare il sito.
+                </li>
+                <li><strong>Cookie di terze parti:</strong> Alcune sezioni del nostro sito potrebbero utilizzare cookie
+                    di terze parti, ad esempio social media o servizi di pubblicità. Questi cookie sono gestiti
+                    direttamente dai rispettivi fornitori.
+                </li>
+            </ul>
+
+            <h2>Gestione dei cookie</h2>
+            <p>Puoi gestire le tue preferenze sui cookie direttamente dal tuo browser, permettendoti di cancellare i
+                cookie già esistenti e di non accettarne di nuovi. Tuttavia, disattivare i cookie potrebbe influire
+                negativamente sull'esperienza di navigazione e alcune funzionalità del sito potrebbero non essere più
+                disponibili.</p>
+
+            <p>Ecco i link alle istruzioni per la gestione dei cookie nei browser più comuni:</p>
+            <ul>
+                <li><a href="https://support.google.com/chrome/answer/95647?hl=it" target="_blank">Google Chrome</a>
+                </li>
+                <li><a href="https://support.mozilla.org/it/kb/Eliminare%20i%20cookie" target="_blank">Mozilla
+                    Firefox</a></li>
+                <li><a href="https://support.apple.com/it-it/guide/safari/sfri11471/mac" target="_blank">Safari</a></li>
+                <li><a href="https://support.microsoft.com/it-it/help/4027947/microsoft-edge-delete-cookies"
+                       target="_blank">Microsoft Edge</a></li>
+            </ul>
+
+            <h2>Modifiche alla presente informativa</h2>
+            <p>Ci riserviamo il diritto di apportare modifiche alla presente informativa sui cookie in qualsiasi
+                momento. Ti invitiamo a consultare regolarmente questa pagina per essere informato su eventuali
+                cambiamenti.</p>
+
+        </div>
+    </div>
+</div>
+
+<div id="contatti"></div>
+<div id="cookie"></div>
+
+<script>
+    // Funzione per caricare HTML da un file e inserirlo in un elemento
+    function loadHTML(elementID, filePath) {
+        fetch(filePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Impossibile caricare ${filePath}`);
+                }
+                return response.text();
+            })
+            .then(data => {
+                const container = document.getElementById(elementID);
+                container.innerHTML = data;
+
+                // Esegui gli script appena inseriti nel DOM
+                const scripts = container.getElementsByTagName('script');
+                for (let i = 0; i < scripts.length; i++) {
+                    eval(scripts[i].text);  // Esegui gli script caricati
+                }
+            })
+            .catch(error => {
+                console.error('Errore:', error);
+            });
+    }
+
+    // Carica la navbar e il footer
+    document.addEventListener('DOMContentLoaded', function() {
+        loadHTML('contatti', 'module_contatti.html');
+        loadHTML('navbar', 'module_navbar.html');
+    });
+</script>
+
+<div class="cookie-banner bg-dark text-light p-3 fixed-bottom" style="display: none;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <p class="mb-0">Questo sito utilizza i cookie per migliorare la tua esperienza. <a href="/cookie-policy" class="text-light">Leggi di più</a></p>
+        <div>
+            <a href="info_cookies.html" class="btn btn-secondary btn-sm mr-2">Info</a>
+            <button class="btn btn-primary btn-sm">Accetta</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.onload = function() {
+        const cookieBanner = document.querySelector('.cookie-banner');
+
+        // Controlla se il cookie di consenso esiste
+        if (!document.cookie.split(';').some((item) => item.trim().startsWith('cookieConsent=true'))) {
+            // Mostra il banner solo se il consenso non è stato dato
+            if (cookieBanner) {
+                cookieBanner.style.display = 'block';
+            }
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const acceptButton = document.querySelector('.cookie-banner button');
+        if (acceptButton) {
+            acceptButton.addEventListener('click', function() {
+                const cookieBanner = document.querySelector('.cookie-banner');
+                if (cookieBanner) {
+                    cookieBanner.style.display = 'none';
+                }
+                // Imposta il cookie di consenso
+                document.cookie = "cookieConsent=true; path=/; max-age=" + (60*60*24*365); // 1 anno
+            });
+        }
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
