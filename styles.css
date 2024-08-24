@@ -1,7 +1,7 @@
 body {
     color: #333333; /* Colore di base del testo */
     background-color: #f5f5f5; /* Sfondo chiaro */
-    font-size: 1.2rem; /* Aumenta la dimensione del font */
+    font-size: 1rem; /* Aumenta la dimensione del font */
     font-family: 'Arial', sans-serif;
 }
 
@@ -91,28 +91,61 @@ h1, h3, h4, h5 {
     flex-direction: column;
 }
 
-table {
+/*table {*/
+/*    width: 100%;*/
+/*    margin: 50px auto;*/
+/*    border-collapse: collapse;*/
+/*    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
+/*    background-color: #ffffff; !* Sfondo bianco per la tabella *!*/
+/*}*/
+
+/*th, td {*/
+/*    padding: 12px 20px;*/
+/*    text-align: center;*/
+/*    border: 1px solid #cccccc;*/
+/*}*/
+
+/*th {*/
+/*    background-color: #004080;*/
+/*    color: #ffffff;*/
+/*    font-size: 1.5rem;*/
+/*}*/
+
+/*tr:hover {*/
+/*    background-color: #e1f5fe;*/
+/*}*/
+
+
+.container-tariffe {
     width: 100%;
     margin: 50px auto;
-    border-collapse: collapse;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff; /* Sfondo bianco per la tabella */
+    background-color: #ffffff; /* Sfondo bianco per il contenitore */
+    border-radius: 8px; /* Aggiungi un po' di arrotondamento agli angoli */
 }
 
-th, td {
+.row-tariffe {
+    border-collapse: collapse;
+    border: 1px solid #cccccc; /* Bordo simile alla tabella */
+}
+
+.col-header {
+    background-color: #004080;
+    color: #ffffff;
+    font-size: 1.5rem;
     padding: 12px 20px;
     text-align: center;
     border: 1px solid #cccccc;
 }
 
-th {
-    background-color: #004080;
-    color: #ffffff;
-    font-size: 1.5rem;
+.col-tariffe {
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid #cccccc;
 }
 
-tr:hover {
-    background-color: #e1f5fe;
+.row-tariffe:hover {
+    background-color: #e1f5fe; /* Colore di sfondo al passaggio del mouse */
 }
 
 @media (max-width: 991.98px) {
