@@ -1,12 +1,12 @@
 body {
-    color: #333333; /* Colore di base del testo */
+    color: #000000; /* Colore di base del testo */
     background-color: #f5f5f5; /* Sfondo chiaro */
     font-size: 1rem; /* Aumenta la dimensione del font */
     font-family: 'Arial', sans-serif;
 }
 
 .navbar {
-    background-color: #004080; /* Blu scuro */
+    background-color: #2c3e50; /* Blu scuro */
     width: 100%;
 }
 
@@ -52,13 +52,13 @@ body {
 }
 
 .contact_sections {
-    background-color: #004080;
+    background-color: #2c3e50;
     color: #ffffff; /* Testo bianco */
 }
 
 h1, h3, h4, h5 {
     font-family: 'Arial', sans-serif;
-    color: #004080; /* Blu scuro per titoli */
+    color: #2c3e50; /* Blu scuro per titoli */
 }
 
 /*.service-item {*/
@@ -155,7 +155,7 @@ h1, h3, h4, h5 {
 }
 
 .col-header {
-    background-color: #004080;
+    background-color: #2c3e50;
     color: #ffffff;
     font-size: 1.5rem;
     padding: 12px 20px;
