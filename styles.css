@@ -1,6 +1,6 @@
 body {
     color: #000000; /* Colore di base del testo */
-    background-color: #f5f5f5; /* Sfondo chiaro */
+    background-color: #ecf0f1; /* Sfondo chiaro */
     font-size: 1rem; /* Aumenta la dimensione del font */
     font-family: 'Arial', sans-serif;
 }
@@ -16,12 +16,12 @@ body {
     padding-left: 1.2rem;
     padding-right: 0.5rem;
     font-size: 1.2rem;
-    color: #ffffff; /* Testo bianco */
+    color: #ecf0f1; /* Testo bianco */
     font-weight: bold;
 }
 
 .nav-link:hover {
-    color: #e1f5fe; /* Colore oro per il hover */
+    color: #95a5a6; /* Colore oro per il hover */
 }
 
 .navbar-brand img {
@@ -53,8 +53,9 @@ body {
 
 .contact_sections {
     background-color: #2c3e50;
-    color: #ffffff; /* Testo bianco */
+    color: #ecf0f1; /* Testo bianco */
 }
+
 
 h1, h3, h4, h5 {
     font-family: 'Arial', sans-serif;
@@ -70,7 +71,7 @@ h1, h3, h4, h5 {
 /*    border: 1px solid #cccccc;*/
 /*    border-radius: 5px;*/
 /*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
-/*    background-color: #ffffff; !* Sfondo bianco per le card *!*/
+/*    background-color: #ecf0f1; !* Sfondo bianco per le card *!*/
 /*    height: 100%; !* Imposta l'altezza a 100% per tutte le celle *!*/
 /*    text-align: center;*/
 /*}*/
@@ -126,7 +127,7 @@ h1, h3, h4, h5 {
     left: 50%;
     width: 100%; /* Larghezza pari a quella dell'immagine */
     transform: translate(-50%, -50%); /* Centra il testo orizzontalmente e verticalmente */
-    color: white;
+    color: #ecf0f1;
     /*font-size: 1.5rem;*/
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.6); /* Nero con trasparenza */
@@ -145,7 +146,7 @@ h1, h3, h4, h5 {
     width: 100%;
     margin: 50px auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff; /* Sfondo bianco per il contenitore */
+    background-color: #ecf0f1; /* Sfondo bianco per il contenitore */
     border-radius: 8px; /* Aggiungi un po' di arrotondamento agli angoli */
 }
 
@@ -156,7 +157,7 @@ h1, h3, h4, h5 {
 
 .col-header {
     background-color: #2c3e50;
-    color: #ffffff;
+    color: #ecf0f1;
     font-size: 1.5rem;
     padding: 12px 20px;
     text-align: center;
@@ -172,6 +173,8 @@ h1, h3, h4, h5 {
 .row-tariffe:hover {
     background-color: #e1f5fe; /* Colore di sfondo al passaggio del mouse */
 }
+
+
 
 @media (max-width: 991.98px) {
     .navbar-nav {
